@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+p {
+  margin: 0;
+}
+.our_roles {
+  font-family: "Jost", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+}
+
+.role_tab {
+  width: 15%;
+}
+.role_title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #414141;
+  text-transform: uppercase;
+}
+.role_point {
+  margin-top: 6em;
+}
+.role_point p {
+  color: #41414166;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding: 10px 0;
+}
+/* .role_point p:first-child::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background-color: #1a4845;
+} */
+
+.role_image {
+  width: 30%;
+  position: relative;
+}
+.role_image img {
+  width: 100%;
+}
+.role_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  content: "";
+  bottom: 20%;
+  right: -66%;
+}
+.role_btn p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a4845;
+  padding: 13px 15px;
+  background-color: white;
+}
+.role_btn button {
+  width: 15%;
+  background: none;
+  border: none;
+  background-color: #1a4845;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.role_btn img {
+  width: 30%;
+  height: 30%;
+}
+.role_text {
+  width: 50%;
+  margin-top: 2em;
+}
+.role_text p {
+  color: #414141cc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+}
