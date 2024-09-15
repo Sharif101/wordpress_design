@@ -13,7 +13,7 @@ p {
 }
 
 .role_tab {
-  width: 15%;
+  width: 20%;
 }
 .role_title {
   font-size: 36px;
@@ -24,22 +24,27 @@ p {
 .role_point {
   margin-top: 6em;
 }
-.role_point p {
+.role_point .role_singlepoint {
   color: #41414166;
   font-size: 16px;
   font-weight: 600;
-  position: relative;
   padding: 10px 0;
 }
-/* .role_point p:first-child::before {
-  position: absolute;
-  content: "";
-  width: 100px;
-  height: 5px;
-  top: 0;
-  left: 0;
+
+.role_singlepoint.active {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1a4845;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.role_singlepoint.active div {
+  width: 25px;
+  height: 3px;
   background-color: #1a4845;
-} */
+  transition: 0.6s;
+}
 
 .role_image {
   width: 30%;
@@ -85,4 +90,34 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 23.12px;
+}
+
+@media (max-width: 420px) {
+  .our_roles {
+    width: 85%;
+    flex-direction: column;
+  }
+  .role_tab {
+    width: 100%;
+  }
+  .role_title {
+    font-size: 30px;
+  }
+  .role_point {
+    margin-top: 1em;
+  }
+  .role_point .role_singlepoint {
+    padding: 5px 0;
+  }
+  .role_image {
+    width: 100%;
+  }
+  .role_btn {
+    bottom: 10%;
+    right: -50%;
+  }
+  .role_text {
+    margin-top: 0;
+    width: 100%;
+  }
 }
